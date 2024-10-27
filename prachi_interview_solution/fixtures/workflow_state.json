@@ -1,0 +1,29 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-10-27 11:09:09.765932",
+  "name": "Pending Approval",
+  "style": "",
+  "workflow_state_name": "Pending Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-10-27 11:09:20.557052",
+  "name": "Need Modification",
+  "style": "",
+  "workflow_state_name": "Need Modification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2024-10-27 11:09:45.917607",
+  "name": "Draft",
+  "style": "",
+  "workflow_state_name": "Draft"
+ }
+]

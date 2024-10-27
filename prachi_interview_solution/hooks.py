@@ -215,3 +215,39 @@ app_license = "MIT"
 # auth_hooks = [
 #	"prachi_interview_solution.auth.validate"
 # ]
+
+doctype_js = {
+	
+	"Sales Order": "public/js/doctype_js/sales_order.js",
+	
+}
+
+fixtures = [
+	{"dt": "Workflow", "filters": [
+            [
+                "name", "in", [
+                    "Timesheet Workflow",
+                    ]
+            ]
+        ]
+    },
+    {"dt": "Role", "filters": [
+            [
+                "name", "in", [
+                    "Timesheet User","Timesheet Manager",
+                    ]
+            ]
+        ]
+    },
+    
+    {"dt": "Workflow State", "filters": [
+			[
+				"name", "in", [
+					"Draft","Pending Approval","Need Modification",
+				]
+			]
+    	]},
+
+        
+    
+    ]

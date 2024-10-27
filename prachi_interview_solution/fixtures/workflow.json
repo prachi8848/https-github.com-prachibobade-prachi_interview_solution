@@ -1,0 +1,107 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Timesheet",
+  "is_active": 1,
+  "modified": "2024-10-27 11:10:34.435173",
+  "name": "Timesheet Workflow",
+  "override_status": 0,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Timesheet User",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Timesheet Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Draft",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Timesheet Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Timesheet Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Pending Approval",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Timesheet Manager",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Timesheet Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Need Modification",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Timesheet Manager",
+    "avoid_status_override": 0,
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Timesheet Workflow",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Pending Approval",
+    "allow_self_approval": 1,
+    "allowed": "Timesheet User",
+    "condition": null,
+    "next_state": "Pending Approval",
+    "parent": "Timesheet Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Draft"
+   },
+   {
+    "action": "Need Modification",
+    "allow_self_approval": 1,
+    "allowed": "Timesheet Manager",
+    "condition": null,
+    "next_state": "Need Modification",
+    "parent": "Timesheet Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending Approval"
+   },
+   {
+    "action": "Pending Approval",
+    "allow_self_approval": 1,
+    "allowed": "Timesheet Manager",
+    "condition": null,
+    "next_state": "Approved",
+    "parent": "Timesheet Workflow",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending Approval"
+   }
+  ],
+  "workflow_name": "Timesheet Workflow",
+  "workflow_state_field": "workflow_state"
+ }
+]
