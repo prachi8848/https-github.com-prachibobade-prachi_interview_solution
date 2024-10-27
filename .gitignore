@@ -1,0 +1,7 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+prachi_interview_solution/docs/current
+node_modules/

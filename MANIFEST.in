@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include prachi_interview_solution *.css
+recursive-include prachi_interview_solution *.csv
+recursive-include prachi_interview_solution *.html
+recursive-include prachi_interview_solution *.ico
+recursive-include prachi_interview_solution *.js
+recursive-include prachi_interview_solution *.json
+recursive-include prachi_interview_solution *.md
+recursive-include prachi_interview_solution *.png
+recursive-include prachi_interview_solution *.py
+recursive-include prachi_interview_solution *.svg
+recursive-include prachi_interview_solution *.txt
+recursive-exclude prachi_interview_solution *.pyc
